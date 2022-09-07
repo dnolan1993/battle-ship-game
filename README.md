@@ -4,6 +4,10 @@ The Battle-ship Game is a logic game that most people are familiar with that run
 
 <img src = "documentation/full_battleship_game_display.png" alt="Screenshot of full battleship game">
 
+## Design
+I mapped out what I wanted to achieve with my functions on a flowchart
+
+
 ## Features
 ### Game board display
 The game displays both a player board and and opponent board.
