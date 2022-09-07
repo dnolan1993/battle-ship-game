@@ -80,3 +80,17 @@ def get_coordinate_value(board, row, col):
     For a given board return the value of a coordinate
     """
     return board[row][col]
+
+
+def get_empty_coordinate(board):
+    """
+    For a given board find a random empty coordinate
+    """
+    empty = False
+
+    while not empty:
+        row, col = randint(0, 7), randint(0, 7)
+        coordinate_value = get_coordinate_value(board, row, col)
+        if coordinate_value == " ":
+            empty = True
+    return row, col
