@@ -161,3 +161,14 @@ def get_ship_row():
         print("You must guess a number")
         guess_row = int(input("Please guess a row between 1 and 8: "))
         return guess_row - 1
+
+
+def get_ship_column():
+    """
+    Allow player to input a guess for column value
+    """
+    column_dict = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "G": 6, "H": 7}
+    guess_column = None
+    while guess_column not in column_dict.keys():
+        guess_column = input("Please guess a column A-H: ")
+    return column_dict[guess_column]
