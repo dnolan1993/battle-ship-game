@@ -180,3 +180,15 @@ def get_player_coordinate():
     """
     player_row_column = [get_ship_row(), get_ship_column()]
     return player_row_column
+
+
+def get_computer_coordinate(board):
+    """
+    Generates random coordinates for computer guess
+    """
+    not_a_miss = False
+    while not not_a_miss:
+        row, col = randint(0, 7), randint(0, 7)
+        if get_coordinate_value(board, row, col) != "*":
+            not_a_miss = True
+    return [row, col]
