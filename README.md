@@ -7,6 +7,10 @@ The Battle-ship Game is a logic game that most people are familiar with that run
 ## Design
 I mapped out what I wanted to achieve with my functions on a flowchart
 
+<img src = "documentation/project_3_flowchart.png" alt="Screenshot of Flowchart for game">
+
+## Languages Used
+The only language used on this project was Python.
 
 ## Features
 ### Game board display
