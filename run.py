@@ -192,3 +192,21 @@ def get_computer_coordinate(board):
         if get_coordinate_value(board, row, col) != "*":
             not_a_miss = True
     return [row, col]
+
+
+def make_a_move(board, coordinate):
+    """
+    Print guess coordinates to choosen board
+    """
+    row = coordinate[0]
+    col = coordinate[1]
+    if get_coordinate_value(board, row, col) == " ":
+        board[row][col] = "-"
+        print("It's a miss!")
+    elif get_coordinate_value(board, row, col) == "#":
+        board[row][col] = "X"
+        print("It's a hit!")
+    elif get_coordinate_value(board, row, col) == "-":
+        print("Positioned already guessed!")
+        return None
+    return board
