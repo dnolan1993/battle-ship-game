@@ -222,3 +222,13 @@ def hit_ships(board):
             if column == "X":
                 count += 1
     return count
+
+
+def check_win(board):
+    """
+    Check if all ships have been hit
+    """
+    if hit_ships(board) == 10:
+        print(f"Game Over! all ship on have been sunk!")
+        return True
+    return False
