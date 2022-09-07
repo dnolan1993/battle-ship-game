@@ -210,3 +210,15 @@ def make_a_move(board, coordinate):
         print("Positioned already guessed!")
         return None
     return board
+
+
+def hit_ships(board):
+    """
+    Count the amount of hits on chosen board
+    """
+    count = 0
+    for row in board:
+        for column in row:
+            if column == "X":
+                count += 1
+    return count
