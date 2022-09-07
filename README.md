@@ -9,8 +9,8 @@ The Battle-ship Game is a logic game that most people are familiar with that run
 The game displays both a player board and and opponent board.
 <ol>
  <li>
-  Player board
-   <ul>
+  Player Board
+   <ul><img src = "documentation/player_board.png">
     <li>
      The board is made up as a grid with rows labelled 1-8 and columns labelled A-H, This allows the user to see and determine where they want to strike.
     </li>
@@ -22,4 +22,15 @@ The game displays both a player board and and opponent board.
     </li>
    </ul>
  </li>
+ <li>
+  Opponent Board
+ </li>
+  <ul>
+   <li>
+    The Opponent board is created in the same way as the player board, the only difference is the random generated ships are hidden from the user.
+   </li>
+   <li>
+    The board shows the user where they have guessed displaying a "-" symbol for a miss and a "X" symbol for a hit.
+   </li>
+  </ul>
 </ol>
