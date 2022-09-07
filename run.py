@@ -50,3 +50,14 @@ def check_for_oob(board, coordinates):
         elif i[1] < 0 or i[1] > len(board[0])-1:  # Each row is a list of cols
             return True
     return False
+
+
+def check_ship_conflict(board, coordinates):
+    """
+    For a given set of coordinates see if they conflict with other ships
+    """
+    for coordinate in coordinates:
+        row, col = coordinate[0], coordinate[1]
+        if get_coordinate_value(board, row, col) == "#":
+            return True
+    return False
