@@ -61,3 +61,15 @@ def check_ship_conflict(board, coordinates):
         if get_coordinate_value(board, row, col) == "#":
             return True
     return False
+
+
+def check_valid_placement(board, coordinates):
+    """
+    Given a board and set of coordinates
+    return if its a valid place to place a ship
+    """
+    if check_for_oob(board, coordinates):
+        return False
+    elif check_ship_conflict(board, coordinates):
+        return False
+    return True
