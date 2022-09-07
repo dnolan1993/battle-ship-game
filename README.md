@@ -69,4 +69,9 @@ When both selections have been made the game will check to see if it's a hit or 
 When the player has made a selection of where to strike the game will display "It's a miss!", "It's a hit!" or "Positioned already guessed!" for both the player and the opponent.
 
 ### Hits counters
+<img src = "documentation/hits_counters.png" alt="Screenshot of hits counters from game">
+
 When the game is ran it will display a hit counter for both the player and the opponent so the player can see who has more hits at any given time during the game.
+
+### Turns Counter
+When the game is ran it will display a turns counter, this counter with start at the number of turns a player has and will show how many turns the player has remaining throughout the game.
