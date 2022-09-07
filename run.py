@@ -94,3 +94,14 @@ def get_empty_coordinate(board):
         if coordinate_value == " ":
             empty = True
     return row, col
+
+
+def get_random_direction():
+    """
+    Return a random direction
+    """
+    directions = {0: "up",
+                  1: "down",
+                  2: "left",
+                  3: "right"}
+    return directions[randint(0, 3)]
