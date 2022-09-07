@@ -109,3 +109,18 @@ When a player has used all of there turns a message will be printed to the conso
   Improve on AI of the computer so the guesses are more logical instead of random.
  </li>
 </ul>
+
+## Testing
+### Validator Testing
+<ul>
+ <li>
+ <a href="http://pep8online.com/" target="_blank">PEP8 online Validator</a>
+ </li>
+  <ul>
+   <li>
+    Validator result
+    <br>
+    
+   </li>
+  </ul>
+</ul>
