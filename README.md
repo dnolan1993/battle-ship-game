@@ -120,7 +120,10 @@ When a player has used all of there turns a message will be printed to the conso
    <li>
     Validator result
     <br>
-    
+    <img src = "documentation/PEP8_validator_results.png" alt="Screenshot of PEP8 validator results">
+   </li>
+   <li>
+    Results show 3 instances where the line was above the 80 character limit, all of these instances are unavoidable and can not be shortened any further.
    </li>
   </ul>
 </ul>
