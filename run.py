@@ -105,3 +105,28 @@ def get_random_direction():
                   2: "left",
                   3: "right"}
     return directions[randint(0, 3)]
+
+
+def generate_ship_coordinates(length, row, col):
+    """"
+    Given a start point generate a set of coordinates for a ship
+    """
+    direction = get_random_direction()
+    coordinates = []
+
+    if direction == "up":
+        for i in range(length):
+            coordinates.append([row - i, col])
+
+    elif direction == "down":
+        for i in range(length):
+            coordinates.append([row + i, col])
+
+    elif direction == "left":
+        for i in range(length):
+            coordinates.append([row, col - i])
+
+    else:  # Right
+        for i in range(length):
+            coordinates.append([row, col + i])
+    return coordinates
