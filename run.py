@@ -232,3 +232,15 @@ def check_win(board):
         print(f"Game Over! all ship on have been sunk!")
         return True
     return False
+
+
+def print_winner(winner, player_board, opponent_board):
+    """
+    Prints winner when all ships on either board are sunk
+    """
+    if winner == "Player" or hit_ships(player_board) < hit_ships(opponent_board):
+        print("Congratulations! You Win!")
+    elif winner == "Opponent" or hit_ships(player_board) > hit_ships(opponent_board):
+        print("You Lose!, Better luck next time.")
+    else:
+        print("It's a Draw, Try again")
