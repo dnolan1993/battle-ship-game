@@ -270,3 +270,27 @@ def run_game(turns, player_board, opponent_board):
         turns -= 1
         print(f"Turns remaining: {turns}")
     return "Draw"
+
+
+def main():
+    """
+    Calls all functions needed to run game
+    """
+    opponent_board = [[" "] * 8 for x in range(8)]
+    player_board = [[" "] * 8 for x in range(8)]
+    ships = [2, 4, 4]
+    print("  = empty place")
+    print("- = a missed shot")
+    print("* = a hit shot")
+    print("# = location of your ship")
+    opponent_board = create_ships(opponent_board, ships)
+    player_board = create_ships(player_board, ships)
+
+    print_board(opponent_board, opponent=True)
+    print_board(player_board)
+
+    winner = run_game(20, player_board, opponent_board)
+    print_winner(winner, player_board, opponent_board)
+
+
+main()
