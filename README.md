@@ -188,6 +188,17 @@ When a player has used all of there turns a message will be printed to the conso
      </li>
      <li>
       Give incorrect inputs to ensure it does not pass them.
+      <br>
+      <img src = "documentation/incorrect_inputs.png" alt="Screenshot of incorrect inputs showing errors">
      </li>
+     <li>
+      Running various inputs to ensure the game gives the correct selection outputs.
+      <br>
+      <img src = "documentation/selection_outcome_display_1.png" alt="Screenshot of selection outcome display message of 'It's a hit!' 'It's a miss!' from game">
+      <br>
+      <img src = "documentation/selection_outcome_display_2.png" alt="Screenshot of selection outcome display message of 'Positioned already guessed!' from game">
+     </li>
+     <li>
+      Running game for full amount of turns to ensure end of game message is display and outcomes are displayed correctly.
     </ul>
   </li>
