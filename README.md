@@ -205,4 +205,27 @@ When a player has used all of there turns a message will be printed to the conso
     </ul>
   </li>
 
-  
+## Bugs
+### Solved Bugs
+<ol>
+ <li>
+  One of the returns was throwing an error as it was a string and not an integer
+ </li>
+  <ul>
+   <li>
+    I wrapped the variable to be returned in "int()" and that allowed the code to run
+   </li>
+  </ul>
+</ol>
+
+### Unsolved Bugs
+<ol>
+ <li>
+  If you pass the column selection input a lowercase letter it throws an error.
+ </li>
+  <ul>
+   <li>
+    This bug was unsolved as I did not have the time to fix it before the project deadline.
+   </li>
+  </ul>
+</ol>
