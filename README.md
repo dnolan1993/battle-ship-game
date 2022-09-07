@@ -12,10 +12,13 @@ The game displays both a player board and and opponent board.
   Player board
    <ul>
     <li>
-     This displays the position of the users randomly placed ships.
+     The board is made up as a grid with rows labelled 1-8 and columns labelled A-H, This allows the user to see and determine where they want to strike.
     </li>
     <li>
-     Shows the user where the opponent has already guessed and the opponents hits/misses
+     It displays the position of the users randomly placed ships with the "#" symbol.
+    </li>
+    <li>
+     Shows the user where the opponent has already guessed, misses are displayed with a "-" symbol and hits are displayed with a "X" symbol.
     </li>
    </ul>
  </li>
