@@ -178,3 +178,16 @@ When a player has used all of there turns a message will be printed to the conso
  </li>
 </ol>
 
+## Functionality Testing
+<ol>
+ <li>
+   Running Game in console
+    <ul>
+     <li>
+      Ensure that when the code is ran the correct values (player board, opponent board and relavent print statements) are all print ad expected.
+     </li>
+     <li>
+      Give incorrect inputs to ensure it does not pass them.
+     </li>
+    </ul>
+  </li>
