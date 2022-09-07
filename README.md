@@ -4,6 +4,30 @@ The Battle-ship Game is a logic game that most people are familiar with that run
 
 <img src = "documentation/full_battleship_game_display.png" alt="Screenshot of full battleship game">
 
+## UX
+### Ideal Client
+The ideal client for this page is anyone that wants to pass some time in a fun way.
+#### They would ideally:
+<ul>
+    <li>Someone who is impulsive.</li>
+    <li>Has some time to spare.</li>
+    <li>Is a logical thinker.</li>
+    <li>Enjoys making tatical decisions to achieve a desired outcome.</li>
+</ul> 
+
+#### Goal as a first-time visitor to the site:
+<ul>
+    <li>Understand the game.</li>
+    <li>Be able to easily operate the game and its functions.</li>
+    <li>Be able to see where all options are and see their own score as well as the opponents.</li>
+</ul>
+
+#### Goal as a returning visitor:
+<ul>
+    <li>Quickly be able to get straight into the game.</li>
+    <li>Be able to clearly see their own score as well as the opponents.</li>
+</ul>
+
 ## Design
 I mapped out what I wanted to achieve with my functions on a flowchart
 
