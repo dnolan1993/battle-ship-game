@@ -15,17 +15,11 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>Enjoys making tatical decisions to achieve a desired outcome.</li>
 </ul> 
 
-#### Goal as a first-time visitor to the site:
+#### Goal as a Game User:
 <ul>
     <li>Understand the game.</li>
     <li>Be able to easily operate the game and its functions.</li>
-    <li>Be able to see where all options are and see their own score as well as the opponents.</li>
-</ul>
-
-#### Goal as a returning visitor:
-<ul>
-    <li>Quickly be able to get straight into the game.</li>
-    <li>Be able to clearly see their own score as well as the opponents.</li>
+    <li>Be able to see their own score as well as the opponents.</li>
 </ul>
 
 ## Design
@@ -151,3 +145,36 @@ When a player has used all of there turns a message will be printed to the conso
    </li>
   </ul>
 </ul>
+
+## UX Client Goals
+### Game User:
+<ol>
+ <li>
+  Understand the game.
+   <ul>
+    <li>
+     On the Game loading, It displays a message outlining which symbol defines which outcome.
+    </li>
+    <li>
+     The boards are then printed to show the user the grid they are guessing on and their own ship locations.
+    </li>
+   </ul>
+ </li>
+ <li>
+  Be able to easily operate the game and its functions.
+  <ul>
+   <li>
+    User only has to type 2 inputs.
+   </li>
+  </ul>
+ </li>
+ <li>
+  Be able to see their score as well as the opponents.
+  <ul>
+   <li>
+    The score and turns remaining counters are displayed at the bottom Game print in the console.
+   </li>
+  </ul>
+ </li>
+</ol>
+
