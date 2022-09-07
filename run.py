@@ -1,5 +1,6 @@
 from random import randint
 
+
 def print_board(board, opponent=False):
     """
     For a given board print it to the terminal
@@ -42,7 +43,8 @@ def create_ships(board, ships):
 
 def check_for_oob(board, coordinates):
     """
-    For a given list of ship coordinates check if any are oob (off of board) for the board
+    For a given list of ship coordinates check if any are oob (off of board)
+    for the board
     """
     for i in coordinates:
         if i[0] < 0 or i[0] > len(board)-1:  # Board is a list of rows
@@ -130,3 +132,14 @@ def generate_ship_coordinates(length, row, col):
         for i in range(length):
             coordinates.append([row, col + i])
     return coordinates
+
+
+def place_ship_on_board(board, ship_coordinates):
+    """
+    Given a board and a ships coordinates update the board
+    with the ship and return the updated board
+    """
+    for coordinate in ship_coordinates:
+        row, col = coordinate[0], coordinate[1]
+        board[row][col] = "#"
+    return board
