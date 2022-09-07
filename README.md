@@ -74,4 +74,6 @@ When the player has made a selection of where to strike the game will display "I
 When the game is ran it will display a hit counter for both the player and the opponent so the player can see who has more hits at any given time during the game.
 
 ### Turns Counter
+<img src = "documentation/turns_counter.png" alt="Screenshot of turns counter from game">
+
 When the game is ran it will display a turns counter, this counter with start at the number of turns a player has and will show how many turns the player has remaining throughout the game.
