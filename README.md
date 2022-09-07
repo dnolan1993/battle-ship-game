@@ -94,4 +94,18 @@ When the game is ran it will display a turns counter, this counter with start at
 
 When a player has used all of there turns a message will be printed to the console stating "Congratulations! You Win!", "You Lose!, Better luck next time." or "It's a Draw, Try again" depending on the outcome of the game.
 
-##
+## Possible Features to be implemented in the future:
+<ul>
+ <li>
+  Allow the user to input grid size.
+ </li>
+ <li>
+  Allow user to input ship sizes.
+ </li>
+ <li>
+  Allow user to input number of turns game runs for.
+ </li>
+ <li>
+  Improve on AI of the computer so the guesses are more logical instead of random.
+ </li>
+</ul>
