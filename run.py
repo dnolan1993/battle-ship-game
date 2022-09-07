@@ -73,3 +73,10 @@ def check_valid_placement(board, coordinates):
     elif check_ship_conflict(board, coordinates):
         return False
     return True
+
+
+def get_coordinate_value(board, row, col):
+    """
+    For a given board return the value of a coordinate
+    """
+    return board[row][col]
