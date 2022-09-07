@@ -38,3 +38,15 @@ def create_ships(board, ships):
 
         board = place_ship_on_board(board, coordinates)
     return board
+
+
+def check_for_oob(board, coordinates):
+    """
+    For a given list of ship coordinates check if any are oob (off of board) for the board
+    """
+    for i in coordinates:
+        if i[0] < 0 or i[0] > len(board)-1:  # Board is a list of rows
+            return True
+        elif i[1] < 0 or i[1] > len(board[0])-1:  # Each row is a list of cols
+            return True
+    return False
