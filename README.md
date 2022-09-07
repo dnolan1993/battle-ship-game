@@ -62,3 +62,4 @@ There are 2 user inputs for the game, 1 for row selection and the other for colu
 When both selections have been made the game will check to see if it's a hit or miss and the display whuch it is on the opponent board.
 
 ### Selection Outcome Display
+When the player has made a selection of where to strike the game will display "It's a miss!", "It's a hit!" or "Positioned already guessed!" for both the player and the opponent.
