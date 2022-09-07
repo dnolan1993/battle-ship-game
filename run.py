@@ -244,3 +244,29 @@ def print_winner(winner, player_board, opponent_board):
         print("You Lose!, Better luck next time.")
     else:
         print("It's a Draw, Try again")
+
+
+def run_game(turns, player_board, opponent_board):
+    """Runs the main game loop"""
+
+    while turns > 0:
+        # Players turn
+        coordinate = get_player_coordinate()
+        if opponent_board is None:
+            break  # Restart if coordinate already selected
+        make_a_move(opponent_board, coordinate)
+        if check_win(opponent_board):
+            return "Player"
+        # Computers turn
+        coordinate = get_computer_coordinate(player_board)
+        make_a_move(player_board, coordinate)
+        if check_win(player_board):
+            return "Opponent"
+
+        print_board(opponent_board, opponent=True)
+        print_board(player_board)
+        print(f"Opponents hits: {hit_ships(player_board)}")
+        print(f"Player hits: {hit_ships(opponent_board)}")
+        turns -= 1
+        print(f"Turns remaining: {turns}")
+    return "Draw"
