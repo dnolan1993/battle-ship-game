@@ -43,6 +43,7 @@ There are 2 user inputs for the game, 1 for row selection and the other for colu
  <li>
   Row Input
   <ul>
+  <img src = "documentation/row_input.png">
    <li>
     When the game is ran a row selection input is printed in the console for the user to type their selection.
    </li>
@@ -51,9 +52,13 @@ There are 2 user inputs for the game, 1 for row selection and the other for colu
  <li>
   Column Input
   <ul>
+  <img src = "documentation/column_input.png">
    <li>
     When the row selection has been made a column selection input is printed in the console for the user to type their selection.
    </li>
   </ul>
  </li>
 </ol>
+When both selections have been made the game will check to see if it's a hit or miss and the display whuch it is on the opponent board.
+
+### Selection Outcome Display
