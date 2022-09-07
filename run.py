@@ -172,3 +172,11 @@ def get_ship_column():
     while guess_column not in column_dict.keys():
         guess_column = input("Please guess a column A-H: ")
     return column_dict[guess_column]
+
+
+def get_player_coordinate():
+    """
+    Store the players guess as a list
+    """
+    player_row_column = [get_ship_row(), get_ship_column()]
+    return player_row_column
