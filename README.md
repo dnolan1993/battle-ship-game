@@ -79,4 +79,6 @@ When the game is ran it will display a hit counter for both the player and the o
 When the game is ran it will display a turns counter, this counter with start at the number of turns a player has and will show how many turns the player has remaining throughout the game.
 
 ### End of game message
+<img src = "documentation/end_of_game_message.png" alt="Screenshot of End of game message from game">
+
 When a player has used all of there turns a message will be printed to the console stating "Congratulations! You Win!", "You Lose!, Better luck next time." or "It's a Draw, Try again" depending on the outcome of the game.
