@@ -143,3 +143,21 @@ def place_ship_on_board(board, ship_coordinates):
         row, col = coordinate[0], coordinate[1]
         board[row][col] = "#"
     return board
+
+
+def get_ship_row():
+    """
+    Allow player to input a guess for row value
+    """
+    try:
+        guess_row = int(input("Please guess a row between 1 and 8: "))
+        if guess_row <= 8 and guess_row > 0:
+            return guess_row - 1
+        else:
+            print("please enter valid row number")
+            guess_row = int(input("Please guess a row between 1 and 8: "))
+            return guess_row - 1
+    except ValueError:
+        print("You must guess a number")
+        guess_row = int(input("Please guess a row between 1 and 8: "))
+        return guess_row - 1
