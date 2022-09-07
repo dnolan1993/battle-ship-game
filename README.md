@@ -10,7 +10,8 @@ The game displays both a player board and and opponent board.
 <ol>
  <li>
   Player Board
-   <ul><img src = "documentation/player_board.png">
+   <ul>
+   <img src = "documentation/player_board.png">
     <li>
      The board is made up as a grid with rows labelled 1-8 and columns labelled A-H, This allows the user to see and determine where they want to strike.
     </li>
@@ -26,6 +27,7 @@ The game displays both a player board and and opponent board.
   Opponent Board
  </li>
   <ul>
+  <img src = "documentation/opponents_board.png">
    <li>
     The Opponent board is created in the same way as the player board, the only difference is the random generated ships are hidden from the user.
    </li>
@@ -33,4 +35,25 @@ The game displays both a player board and and opponent board.
     The board shows the user where they have guessed displaying a "-" symbol for a miss and a "X" symbol for a hit.
    </li>
   </ul>
+</ol>
+
+### User Inputs
+There are 2 user inputs for the game, 1 for row selection and the other for column selection.
+<ol>
+ <li>
+  Row Input
+  <ul>
+   <li>
+    When the game is ran a row selection input is printed in the console for the user to type their selection.
+   </li>
+  </ul>
+ </li>
+ <li>
+  Column Input
+  <ul>
+   <li>
+    When the row selection has been made a column selection input is printed in the console for the user to type their selection.
+   </li>
+  </ul>
+ </li>
 </ol>
