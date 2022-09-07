@@ -13,6 +13,9 @@ I mapped out what I wanted to achieve with my functions on a flowchart
 The only language used on this project was Python.
 
 ## Features
+
+## Existing Features
+
 ### Game board display
 The game displays both a player board and and opponent board.
 <ol>
@@ -90,3 +93,5 @@ When the game is ran it will display a turns counter, this counter with start at
 <img src = "documentation/end_of_game_message.png" alt="Screenshot of End of game message from game">
 
 When a player has used all of there turns a message will be printed to the console stating "Congratulations! You Win!", "You Lose!, Better luck next time." or "It's a Draw, Try again" depending on the outcome of the game.
+
+##
