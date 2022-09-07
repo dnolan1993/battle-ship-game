@@ -200,5 +200,9 @@ When a player has used all of there turns a message will be printed to the conso
      </li>
      <li>
       Running game for full amount of turns to ensure end of game message is display and outcomes are displayed correctly.
+      <br>
+      <img src = "documentation/end_of_game_printed_outcomes.png" alt="Screenshot of end of game display message">
     </ul>
   </li>
+
+  
