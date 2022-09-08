@@ -88,12 +88,12 @@ There are 2 user inputs for the game, 1 for row selection and the other for colu
   </ul>
  </li>
 </ol>
-When both selections have been made the game will check to see if it's a hit or miss and the display which it is on the opponent board.
+When both selections have been made the game will check to see if it's a hit or miss and then display which it is on the opponent board.
 
 ### Selection Outcome Display
 <img src = "documentation/selection_outcome_display_1.png" alt=" Screenshot of selection outcome display message of 'It's a hit!' 'It's a miss!' from game">
 
-<img src = "documentation/selection_outcome_display_2.png" alt="Screenshot of selection outcome display message of 'Positioned already guessed!' from game">
+<img src = "documentation/updated_selection_outcome_display_2.png" alt="Screenshot of selection outcome display message of 'Positioned already guessed!' from game">
 
 When the player has made a selection of where to strike the game will display "It's a miss!", "It's a hit!" or "Positioned already guessed! Annnd you've wasted a turn!" for both the player and the opponent.
 
@@ -124,12 +124,19 @@ When a player has used all of their turns a message will be printed to the conso
   Allow the user to input the number of turns the game runs for, again this can be easily achieved as the run game function takes turns as a parameter and a function could have a user input determine the turns variable value.
  </li>
  <li>
-  When the player guesses the same position they don't lose a turn the turns counter does not change until a valid turn is taken.
+  Add the feature that when the player guesses the same position they don't lose a turn the turns counter does not change until a valid turn is taken.
  </li>
  <li>
   Improve on AI of the computer so the guesses are more logical instead of random.
  </li>
 </ul>
+
+## Data Model
+I decided to use a Board class. The game creates multiple instances for various parts of the game. Without the board class, the rest of the game wouldn't function. 
+
+It stores all the data relating to the board both for the user and the opponent.  grid size, ship location, ship direction, number of ships hit and the winner if all ships are hit within the turns of the game.
+
+The class also has methods to help the game, e.g primy_board method to print out the current board and other methods that when they are combined will make sure ships are within the board and not conflicting with another ship's position. 
 
 ## Testing
 ### Validator Testing
@@ -141,10 +148,10 @@ When a player has used all of their turns a message will be printed to the conso
    <li>
     Validator result
     <br>
-    <img src = "documentation/PEP8_validator_results.png" alt="Screenshot of PEP8 validator results">
+    <img src = "documentation/updated_PEP8_validator_results.png" alt="Screenshot of PEP8 validator results">
    </li>
    <li>
-    Results show 3 instances where the line was above the 80-character limit, all of these instances are unavoidable and can not be shortened any further.
+    Results show 5 instances where the line was above the 80-character limit, all of these instances are unavoidable and can not be shortened any further.
    </li>
   </ul>
 </ul>
@@ -199,7 +206,7 @@ When a player has used all of their turns a message will be printed to the conso
       <br>
       <img src = "documentation/selection_outcome_display_1.png" alt=" Screenshot of selection outcome display message of 'It's a hit!' 'It's a miss!' from game">
       <br>
-      <img src = "documentation/selection_outcome_display_2.png" alt="Screenshot of selection outcome display message of 'Positioned already guessed!' from game">
+      <img src = "documentation/updated_selection_outcome_display_2.png" alt="Screenshot of selection outcome display message of 'Positioned already guessed!' from game">
      </li>
      <li>
       Run the game for the full amount of turns to ensure the end-of-game message is displayed and outcomes are displayed correctly.
@@ -278,3 +285,10 @@ To deploy the Game to Heroku I took the following steps:
   I then clicked "Deploy Branch" at the bottom of the page to deploy my page and when the app had been deployed was prompted with a link to my app.
  </li>
 </ol>
+
+## Credits
+<ul>
+ <li>
+  When creating the "Data Model" section of my README.md file I based it on the example README.md shown at <a href="https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/" target="_blank">Code Institute.net</a>
+ </li>
+</ul>
