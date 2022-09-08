@@ -171,18 +171,20 @@ def get_ship_row():
     """
     Allow player to input a guess for row value
     """
-    try:
-        guess_row = int(input("Please guess a row between 1 and 8: "))
-        if guess_row <= 8 and guess_row > 0:
+    guess_row = 0
+    while guess_row < 1 or guess_row > 8:
+        try:
+            guess_row = int(input("Please guess a row between 1 and 8:\n"))
+            if guess_row <= 8 and guess_row > 0:
+                return guess_row - 1
+            else:
+                print("please enter valid row number")
+                guess_row = int(input("Please guess a row between 1 and 8:\n"))
+                return guess_row - 1
+        except ValueError:
+            print("You must guess a number")
+            guess_row = int(input("Please guess a row between 1 and 8:\n"))
             return guess_row - 1
-        else:
-            print("please enter valid row number")
-            guess_row = int(input("Please guess a row between 1 and 8: "))
-            return guess_row - 1
-    except ValueError:
-        print("You must guess a number")
-        guess_row = int(input("Please guess a row between 1 and 8: "))
-        return guess_row - 1
 
 
 def get_ship_column():
@@ -229,7 +231,7 @@ def make_a_move(board, coordinate):
         board.update_coordinate_value(row, col, "X")
         print("It's a hit!")
     elif board.get_coordinate_value(row, col) == "-" or board.get_coordinate_value(row, col) == "X":
-        print("Positioned already guessed!")
+        print("Positioned already guessed! Annnd you've wasted a turn!")
         return None
     return board
 

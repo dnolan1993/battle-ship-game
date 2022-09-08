@@ -95,7 +95,7 @@ When both selections have been made the game will check to see if it's a hit or 
 
 <img src = "documentation/selection_outcome_display_2.png" alt="Screenshot of selection outcome display message of 'Positioned already guessed!' from game">
 
-When the player has made a selection of where to strike the game will display "It's a miss!", "It's a hit!" or "Positioned already guessed!" for both the player and the opponent.
+When the player has made a selection of where to strike the game will display "It's a miss!", "It's a hit!" or "Positioned already guessed! Annnd you've wasted a turn!" for both the player and the opponent.
 
 ### Hits counters
 <img src = "documentation/hits_counters.png" alt="Screenshot of hits counters from game">
@@ -122,6 +122,9 @@ When a player has used all of their turns a message will be printed to the conso
  </li>
  <li>
   Allow the user to input the number of turns the game runs for, again this can be easily achieved as the run game function takes turns as a parameter and a function could have a user input determine the turns variable value.
+ </li>
+ <li>
+  When the player guesses the same position they don't lose a turn the turns counter does not change until a valid turn is taken.
  </li>
  <li>
   Improve on AI of the computer so the guesses are more logical instead of random.
