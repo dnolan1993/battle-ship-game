@@ -150,16 +150,16 @@ def get_ship_row():
     Allow player to input a guess for row value
     """
     try:
-        guess_row = int(input("Please guess a row between 1 and 8: "))
+        guess_row = int(input("Please guess a row between 1 and 8:\n"))
         if guess_row <= 8 and guess_row > 0:
             return guess_row - 1
         else:
             print("please enter valid row number")
-            guess_row = int(input("Please guess a row between 1 and 8: "))
+            guess_row = int(input("Please guess a row between 1 and 8:\n"))
             return guess_row - 1
     except ValueError:
         print("You must guess a number")
-        guess_row = int(input("Please guess a row between 1 and 8: "))
+        guess_row = int(input("Please guess a row between 1 and 8:\n"))
         return guess_row - 1
 
 
@@ -170,7 +170,7 @@ def get_ship_column():
     column_dict = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "G": 6, "H": 7}
     guess_column = None
     while guess_column not in column_dict.keys():
-        guess_column = input("Please guess a column A-H: ")
+        guess_column = input("Please guess a column A-H:\n")
     return column_dict[guess_column]
 
 
